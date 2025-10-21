@@ -7,6 +7,8 @@ https://www.figma.com/design/53iJD5Y0KnmQNWnfroThMZ/Sem-t%C3%ADtulo?node-id=0-1&
 
 figma data/18/10/25  git code data /19/10/25
 
-foi uma inspiraçao de um projeto que foi realizado em outra materia 
+Tema: loja de roupas, Objetivo: melhorar as vendas e a apresentação da loja, Justificativa: O négocio parece promissor e interessante
 
-aumentar e melhorar as paginas para que tenha uma melhor entrega 
+inspiração de um projeto que foi realizado em outra matéria 
+
+Utilizamos um design para remeter à logo da loja, dessa forma utilizamos cores, fontes e layot para remeter a ele
