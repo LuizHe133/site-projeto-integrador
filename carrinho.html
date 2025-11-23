@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INAIRAN | Moda Leve e Atemporal</title>
+    <meta
+      name="description"
+      content="Loja INAIRAN - Moda leve, sustentável e atemporal. Confira nossa nova coleção!"
+    />
+
+    <link rel="icon" type="image/x-icon" href="Images/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="Images/favicon.svg" />
+    <link rel="icon" type="image/png" href="Images/favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cores.css" />
+    <script async src="js/carrinho.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img
+          class="imagemProduto"
+          src="Images/inairan-logo.png"
+          alt="Logo da loja inairan"
+        />
+        <span style="font-size: 1.5rem; font-weight: bold">INAIRAN </span>
+      </div>
+      <nav class="nav" aria-label="Menu principal">
+        <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="colecao.html">Coleção</a></li>
+          <li><a href="novidades.html">Novidades</a></li>
+          <li><a href="promocoes.html">Promoções</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+        </ul>
+      </nav>
+      <div class="user-area">
+        <a href="#login" class="login">Entrar</a>
+        <a href="#cadastro" class="cadastro">Cadastrar</a>
+        <a href="carrinho.html" class="cart" aria-label="Carrinho de compras"
+          >🛒</a
+        >
+      </div>
+    </header>
+
+    <main class="alinhamento">
+      <h2>Confira o carrinho</h2>
+
+      <div class="carrinho">
+        <section class="produtos" id="colecao">
+          <div class="grid">
+            <div class="card">
+              <img
+                src="Images/vestido-leve.png"
+                alt="Vestido leve sustentável"
+                loading="lazy"
+              />
+              <h3>Vestido sustentável</h3>
+              <p class="preco">R$ 199,90</p>
+              <input
+                type="number"
+                class="quantidade"
+                min="0"
+                max="99"
+                value="1"
+              />
+              <button class="btnremove">Remover do carrinho</button>
+            </div>
+
+            <div class="card">
+              <img
+                src="Images/blusa-basica.png"
+                alt="Blusa básica algodão orgânico"
+                loading="lazy"
+              />
+              <h3>Blusa algodão orgânico</h3>
+              <p class="preco">R$ 149,90</p>
+              <input
+                type="number"
+                class="quantidade"
+                min="0"
+                max="99"
+                value="1"
+              />
+              <button class="btnremove">Remover do carrinho</button>
+            </div>
+
+            <div class="card">
+              <img
+                src="Images/calça-susten.png"
+                alt="Calça confortável sustentável"
+                loading="lazy"
+              />
+              <h3>Calça sustentável</h3>
+              <p class="preco">R$ 179,90</p>
+              <input
+                type="number"
+                class="quantidade"
+                min="0"
+                max="99"
+                value="1"
+              />
+              <button class="btnremove">Remover do carrinho</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="alinhamento" id="Pagamento">
+          <h2>Selecione a forma de pagamento</h2>
+          <div>
+            <h3>Total:</h3>
+            <span></span>
+          </div>
+          <a href="#" class="btn">Finalizar compra</a>
+        </section>
+      </div>
+
+      <section class="produtos" id="sobre">
+        <h2>Sobre a INAIRAN</h2>
+        <p style="max-width: 600px; margin: 1rem auto; color: #555">
+          A INAIRAN nasceu com o propósito de oferecer moda leve, prática e
+          atemporal, aliando sustentabilidade e conforto em cada detalhe.
+          Conheça mais sobre nossa missão!
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="preco">© 2025 INAIRAN — Moda leve, prática e atemporal.</p>
+    </footer>
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navUl = document.querySelector(".nav ul");
+      menuToggle.addEventListener("click", () => {
+        navUl.classList.toggle("open");
+      });
+      document.querySelectorAll(".nav a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navUl.classList.remove("open");
+        });
+      });
+    </script>
+  </body>
+</html>
